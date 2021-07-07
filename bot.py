@@ -167,7 +167,7 @@ async def clear(ctx, amount=5):
 
 @client.command()
 async def stop(ctx):
-    if ctx.message.author.id == secrets["Veink"]:
+    if ctx.message.author.id == secrets["owner"]:
         stop_embed = discord.Embed(title='Shutting down...', color=0x00ff00)
         stop_embed.set_image(url='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FZxGE252tuWw%2Fmaxresdefault.jpg&f=1&nofb=1')
         await ctx.send(embed=stop_embed)
